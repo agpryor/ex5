@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Meet me at the Library</title>
+        
+        
+        <link type="text/css" href="main.css" rel="stylesheet">
+        
+        
+        
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        
+        <script src="https://code.createjs.com/soundjs-0.6.2.min.js"></script>
+        
+        <script>
+            
+            var noteC = "C";
+            var noteC_ = "C_";
+            var noteD = "D";
+            var noteD_ = "D_";
+            var noteE = "E";
+            var noteF = "F";
+            var noteF_ = "F_";
+            var noteG = "G";
+            var noteG_ = "G_";
+            var noteA = "A";
+            var noteA_ = "A_";
+            var noteB = "B";
+            
+            function loadSound () {
+                createjs.Sound.registerSound("piano_middle_C.mp3", noteC);
+                createjs.Sound.registerSound("piano_C_sharp.mp3", noteC_);
+                createjs.Sound.registerSound("piano_D.mp3", noteD);
+                createjs.Sound.registerSound("piano_D_sharp.mp3", noteD_);
+                createjs.Sound.registerSound("piano_E.mp3", noteE);
+                createjs.Sound.registerSound("piano_F.mp3", noteF);
+                createjs.Sound.registerSound("piano_F_sharp.mp3", noteF_);
+                createjs.Sound.registerSound("piano_G.mp3", noteG);
+                createjs.Sound.registerSound("piano_G_sharp.mp3", noteG_);
+                createjs.Sound.registerSound("piano_A.mp3", noteA);
+                createjs.Sound.registerSound("piano_A_sharp.mp3", noteA_);
+                createjs.Sound.registerSound("piano_B.mp3", noteB);
+            }
+            
+            
+    
+            function playSound () {
+                createjs.Sound.play(noteC);
+                createjs.Sound.play(noteC_);
+                createjs.Sound.play(noteD);
+                createjs.Sound.play(noteD_);
+                createjs.Sound.play(noteE);
+                createjs.Sound.play(noteF);
+                createjs.Sound.play(noteF_);
+                createjs.Sound.play(noteG);
+                createjs.Sound.play(noteG_);
+                createjs.Sound.play(noteA);
+                createjs.Sound.play(noteA_);
+                createjs.Sound.play(noteB);
+            }
+            
+        </script>
+        
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    
+    <body onload="loadSound();">
+        
+        <button onclick="playSound();" class="playSound">Note C</button>
+        <button onclick="playSound();" class="playSound">Note C_</button>
+        <button onclick="playSound();" class="playSound">Note D</button>
+        <button onclick="playSound();" class="playSound">Note D_</button>
+        <button onclick="playSound();" class="playSound">Note E</button>
+        <button onclick="playSound();" class="playSound">Note F</button>
+        <button onclick="playSound();" class="playSound">Note F_</button>
+        <button onclick="playSound();" class="playSound">Note G</button>
+        <button onclick="playSound();" class="playSound">Note G_</button>
+        <button onclick="playSound();" class="playSound">Note A</button>
+        <button onclick="playSound();" class="playSound">Note A_</button>
+        <button onclick="playSound();" class="playSound">Note B</button>
+        
+        <section class="piano">
+            
+            <img src="imgs/noteC.png" height="800" alt="noteC" id="img1" />
+            <img src="imgs/noteC_.png" height="800" alt="noteC#" id="img2" />
+            <img src="imgs/noteD.png" height="800" alt="noteD" id="img3" />
+            <img src="imgs/noteD_.png" height="800" alt="noteD#" id="img4" />
+            <img src="imgs/noteE.png" height="800" alt="noteE" id="img5" />
+            <img src="imgs/noteF.png" height="800" alt="noteF" id="img6" />
+            <img src="imgs/noteF_.png" height="800" alt="noteF#" id="img7" />
+            <img src="imgs/noteG.png" height="800" alt="noteG" id="img8" />
+            <img src="imgs/noteG_.png" height="800" alt="noteG#" id="img9" />
+            <img src="imgs/noteA.png" height="800" alt="noteA" id="img10" />
+            <img src="imgs/noteA_.png" height="800" alt="noteA#" id="img11" />
+            <img src="imgs/noteB.png" height="800" alt="noteB" id="img12" />
+            
+        </section>
+        
+        
+        <footer>
+            <a href="http://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+        </footer>
+        
+    </body>
+</html>
